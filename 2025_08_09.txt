@@ -1,0 +1,37 @@
+I identified the hello_elixir.ex file. Within the hello_elixir.ex file I was able to identify the definition of the HelloWorld class and its corresponding hello method which printed out the `:world` string.
+
+At first I tried to create a claremont method which prints `:computer-network`. However I recieved the following error:
+
+" iex -S mix     
+
+Erlang/OTP 28 [erts-16.0.2] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1] [jit] [dtrace]
+
+Compiling 1 file (.ex)
+    error: undefined variable "network"
+    │
+ 19 │     :computer-network
+    │               ^^^^^^^
+    │
+    └─ lib/hello_elixir.ex:19:15: HelloElixir.claremont/0
+
+
+== Compilation error in file lib/hello_elixir.ex ==
+** (CompileError) lib/hello_elixir.ex: cannot compile module HelloElixir (errors have been logged)
+"
+
+After some modifications I was able to output the following:
+
+
+
+"
+iex -S mix
+
+Erlang/OTP 28 [erts-16.0.2] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1] [jit] [dtrace]
+
+Compiling 1 file (.ex)
+Generated hello_elixir app
+Interactive Elixir (1.18.4) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> HelloElixir.claremont()
+:computernetwork
+iex(2)> 
+"

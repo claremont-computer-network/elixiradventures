@@ -15,4 +15,7 @@ defmodule HelloElixir do
   def hello do
     :world
   end
+  def claremont do
+    :computernetwork
+  end
 end
