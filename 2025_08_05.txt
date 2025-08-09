@@ -1,0 +1,42 @@
+On Mac, using homebrew:
+
+brew install elixir
+
+Confirm with:
+
+elixir -v
+
+
+I see:
+
+"
+Erlang/OTP 28 [erts-16.0.2] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1] [jit] [dtrace]
+
+Elixir 1.18.4 (compiled with Erlang/OTP 27)
+"
+
+
+mix new hello_elixir
+cd hello_elixir
+iex -S mix
+HelloElixir.hello()
+
+"
+BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo
+       (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution
+a
+"
+
+mix test
+
+"
+Compiling 1 file (.ex)
+Generated hello_elixir app
+Running ExUnit with seed: 17435, max_cases: 16
+
+..
+Finished in 0.01 seconds (0.00s async, 0.01s sync)
+1 doctest, 1 test, 0 failures
+"
+
+
