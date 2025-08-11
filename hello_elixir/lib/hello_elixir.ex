@@ -18,4 +18,12 @@ defmodule HelloElixir do
   def claremont do
     :computernetwork
   end
+
+  def hello(name) do
+    "Hello, " <> name 
+  end
+
+  def hello(name1, name2) do
+    "Hello, #{name1} and #{name2}"
+  end
 end

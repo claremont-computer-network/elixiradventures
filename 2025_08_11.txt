@@ -1,0 +1,30 @@
+I was curious what the `:` operator represented, and then I realized that I still did not understand the structure of a method definition in Elixir.
+
+So I queried on Google: "method definitions in elixir" and clicked on the first link after the AI summary:
+
+https://elixirschool.com/en/lessons/basics/functions
+
+This page provided examples using zero, one, and two parameters in an Elixir method which composes a print statement.
+
+I felt that this was a satisfactory next step as I pick back up from where I left off on 2025/08/09 (2 days ago now without coding in Elixir) and in search of purpose or structure.
+
+"
+
+iex -S mix     
+
+Erlang/OTP 28 [erts-16.0.2] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1] [jit] [dtrace]
+
+Compiling 1 file (.ex)
+Generated hello_elixir app
+Interactive Elixir (1.18.4) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> HelloElixir.hello(World)
+** (ArgumentError) construction of binary failed: segment 2 of type 'binary': expected a binary but got: World
+    (hello_elixir 0.1.0) lib/hello_elixir.ex:23: HelloElixir.hello/1
+    iex:1: (file)
+iex(1)> HelloElixir.hello("World")
+"Hello, World"
+iex(2)> HelloElixir.hello("Anubis", "Osiris")
+"Hello, Anubis and Osiris"
+iex(3)> 
+
+"
